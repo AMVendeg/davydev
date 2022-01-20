@@ -11,7 +11,8 @@ export class Astronaut {
   isOnTheShip: boolean;
   completedMisson: number;
   isAlive: boolean;
-
+  temperature: number;
+  specializations: string [];
 
   constructor (name: string, nationality: string) {
     this.name = name;
@@ -20,19 +21,17 @@ export class Astronaut {
     this.isOnTheShip = false;
     this.completedMisson = 10;
     this.isAlive = true;
-  }
-
-  addRandomSpecialization(): void {
-    const specializations: string [] = [
+    this.temperature = 36;
+    this.specializations = [
       'astrophysicist', 
       'engineer', 
       'astrobiologist', 
       'alien scientist', 
       'space hurricane expert'];
-    for (let i: number = 0; i < specializations.length; i++) {
-      const randomSpecIndex: number = Math.floor(Math.random() * (specializations.length));
-      this.specialization = specializations[i][randomSpecIndex];
-    }
+  }
+  
+  addRandomSpecialization(): void {
+    this.specialization = this.specializations[Math.floor(Math.random() * this.specializations.length)];
   }
 
   killedBySpace(): void {
