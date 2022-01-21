@@ -1,6 +1,7 @@
 import { Astronaut } from "./astronaut";
 
-let astronaut = new Astronaut('Armin Schaffhausen', 'half-american-german');
-astronaut.addRandomSpecialization();
+let myAstronaut = new Astronaut('Armin Schaffhausen', 'half-american-german');
+myAstronaut.addRandomSpecialization();
 
-console.log(astronaut);
+console.log(myAstronaut);
+console.log(myAstronaut);
