@@ -8,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ElevationAzimuthComponent implements OnInit {
   constructor() { }
 
-  // slider = document.querySelector("#appearance7");
-
   ngOnInit(): void { 
 
     $("#circle").roundSlider({
@@ -21,6 +19,7 @@ export class ElevationAzimuthComponent implements OnInit {
       width: 3,
       handleSize: "+10",
       handleShape: "round",
+
       min: 60,
       max: -60,
       
@@ -37,10 +36,8 @@ export class ElevationAzimuthComponent implements OnInit {
       }
     });
   
-  let sliderObj = $("#circle").data("roundSlider");
-  sliderObj.setValue(0);
-   }  
-
-
+    let sliderObj = $("#circle").data("roundSlider");
+    sliderObj.setValue(0);
   
+  }
 }
