@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+$mainColor: #6BDBEB;
+$mattWhite: #D3D3D3;
+$mainBg: #1E1E1E;
+$mainBoxBg: #2B2D30;
+$modulBG: #242526;
+
+.main-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: $mainBg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-box {
+  position: absolute;
+  top: 40px;
+  width: 550px;
+  height: 710px;
+  display: flex;
+  flex-direction: column;
+  background-color: $mainBoxBg;
+}
+
+.header-line {
+  width: 100%;
+  height: 10px;
+  background-color: $mainColor;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.title-box {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-primary {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.title-secondary {
+  font-weight: 100;
+}
+
+.moduls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: $modulBG;
+  height: 30px;
+  width: 100%;
+}
+
+.version {
+  position: absolute;
+  bottom: 8px;
+  padding-left: 30px;
+  font-size: 10px;
+  color: $mattWhite;
+  font-weight: 100;
+}

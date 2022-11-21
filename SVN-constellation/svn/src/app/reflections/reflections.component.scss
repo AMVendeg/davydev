@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+$mainColor: #6BDBEB;
+$mattWhite: #D3D3D3;
+$mainBg: #1E1E1E;
+$mainBoxBg: #2B2D30;
+$modulBG: #242526;
+
+.reflections-box {
+  width: 500px;
+  height: 170px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reflection-modul {
+  width: 60%;
+  background-color: $modulBG;
+  position: relative;
+}
+
+.reflection-title {
+  font-size: 16px;
+  padding: 20px 10px 10px 20px;
+  font-weight: 100;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border: 1px solid $mattWhite;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.toggle button {
+  width: 14px;
+  height: 14px;
+  background-color: $mainColor;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  top: 2px;
+  right: 3px;
+}
+
+.reflection-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modul-title {
+  font-size: 10px;
+  font-weight: 100;
+  color: $mattWhite;
+  padding: 10px;
+}
+
+.modul-value {
+  font-size: 12px;
+  color: $mainColor;
+  padding: 10px;
+}
+
+.room-btn {
+  border: 1px solid $mainColor;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  background-color: transparent;
+}
+
+.reflection-modul {
+  width: 60%;
+  background-color: $modulBG;
+  position: relative;
+}
+
+.clarity-modul, .width-modul {
+  width: 18%;
+  background-color: $modulBG;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+

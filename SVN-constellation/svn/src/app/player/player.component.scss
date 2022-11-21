@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+$mainColor: #6BDBEB;
+$mattWhite: #D3D3D3;
+$mainBg: #1E1E1E;
+$mainBoxBg: #2B2D30;
+$modulBG: #242526;
+
+.player-box {
+  width: 500px;
+  height: 100px;
+  background-color: $modulBG;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-box p {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.browse {
+  border: 1px solid $mainColor;
+  border-radius: 3px;
+  padding: 7px 12px 7px 12px;
+  color: $mainColor;
+  background: transparent;
+  text-transform: uppercase;
+}

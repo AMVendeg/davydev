@@ -1,0 +1,35 @@
+<div class="elevation-azimuth-box">
+  <div class="elevation-box">
+    <div class="elevation-title">Elevation</div>
+    <div>
+      <label class="elevation-value">{{slider.value}}°</label>
+    </div>
+    <div class="slider">
+      <mat-slider [vertical]="true" min="-100" max="100" value="0" #slider radius="200">
+        <input matSliderThumb>
+      </mat-slider>
+    </div>
+    <img src="assets/elevation-ruler.png" alt="">
+    <div class="ruler-desc">
+      <p>Up</p>
+      <p>0</p>
+      <p>Down</p>
+    </div>
+  </div>
+  <div class="azimuth-box">
+
+    <!-- <div id="slider"></div> -->
+
+   
+    <img src="assets/azimuth-circle.png" id="circle" alt="">
+    <img src="assets/azimuth-lines.png" id="lines" alt="">
+    <div class="azimuth-desc">
+      <p class="front">Front</p>
+      <p class="back">Back</p>
+      <p class="left">Left</p>
+      <p class="right">Right</p>
+      <p class="azimuth">Azimuth</p>
+      <p class="azimuth-value">10°</p>
+    </div>
+  </div>
+</div>
