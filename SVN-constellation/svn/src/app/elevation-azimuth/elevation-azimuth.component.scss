@@ -86,17 +86,27 @@ $modulBG: #242526;
 
 #lines {
   position: absolute;
-  width: 180px;
-  top: 10px;
-  left: 60px;
+  width: 170px;
+  top: 15px;
+  left: 65px;
 }
+
+
+.azimuth-box {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .azimuth-desc {
   position: relative;
   width: 160px;
   height: 160px;
-  top: 20px;
-  left: 70px;
+  top: 10px;
+  left: 0px;
 }
 
 .azimuth-desc p {
@@ -105,7 +115,15 @@ $modulBG: #242526;
   color: $mattWhite;
 }
 
-.front, .back, .left, .right, .azimuth, .azimuth-value {
+.azimuth {
+  top: 40px;
+  left: 60px;
+  font-size: 12px !important;
+  color: $mainColor !important;
+  font-weight: 300 !important;
+}
+
+.front, .back, .left, .right, .azimuth {
   position: absolute;
 }
 
@@ -113,39 +131,19 @@ $modulBG: #242526;
   top: 10px;
   left: 65px;
 }
-
 .back {
   bottom: 10px;
   left: 65px;
 }
-
 .left {
-  top: 73px;
-  left: 10px;
+  top: 60px;
+  left: 20px;
 }
-
 .right {
-  top: 73px;
-  right: 10px;
+  top: 60px;
+  right: 20px;
 }
 
-.azimuth {
-  top: 50px;
-  left: 60px;
-  font-size: 12px !important;
-  color: $mainColor !important;
-  font-weight: 300 !important;
-}
-
-.azimuth-value {
-  top: 70px;
-  left: 75px;
-  font-size: 24px !important;
-  color: $mainColor !important;
-}
-
-#slider {
-  width: 300px;
-  height: 200px;
-  border: 1px solid aqua;
+#circle .rs-handle  {
+  background-color: #6BDBEB !important;
 }
