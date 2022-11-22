@@ -9,7 +9,10 @@ export class ReflectionsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { 
 
+  // Accessible Semantic SCSS / Vanilla Number Input Knob / Potentiometer
+// Created: 2020.10.11, 10:20h
+// Modified: 2022.06.16, 08:01h
+  }
 }
